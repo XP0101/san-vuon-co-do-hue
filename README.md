@@ -55,3 +55,11 @@ Các thay đổi trực tiếp trong `dist/` sẽ bị ghi đè khi tạo lại 
 - JavaScript qua kiểm tra cú pháp Node.
 - Trình duyệt: bộ lọc Hồ cá 2/2, tải thêm 12/12, gallery chuyển ảnh và Escape, lỗi form bắt buộc, soạn email hợp lệ, menu di động.
 - Kiểm tra tràn ngang tại 1440px và 390px; chưa thực hiện kiểm toán WCAG đầy đủ hoặc kiểm tra trên thiết bị iOS/Android thật.
+
+## Nhận diện và khả năng đọc
+
+- Logo gốc ở `src/assets/logo.jpeg`, được nhúng vào HTML để từng trang vẫn mở độc lập.
+- Bảng màu mới: xanh đậm `#1C4332`, xanh chủ đạo `#28513D`, ô-liu `#7F965C`, màu nút sáng `#B5C78E`, nền `#F8F9F3`.
+- Nội dung chính 18px, nút 17px, thông tin phụ thường 16px; khoảng cách dòng 1.8–1.9.
+- Điện thoại dùng một cột cho dịch vụ/dự án; lời giới thiệu được rút gọn và nút đầu trang gọi trực tiếp.
+- Kiểm tra trình duyệt ở 390px và 1440px: không tràn ngang, logo tải đúng, điều hướng không chồng nhau. Khối bài viết chứa đủ nội dung và cách phần liên hệ 64px trên điện thoại.
