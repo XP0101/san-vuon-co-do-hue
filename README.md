@@ -77,3 +77,8 @@ Các thay đổi trực tiếp trong `dist/` sẽ bị ghi đè khi tạo lại 
 - Nền toàn cảnh hồ và đồi cỏ: Arinal Izzah, https://unsplash.com/photos/00DjNGJqkVk
 - Khung vòm hồ thủy sinh, thác nước và cầu đá: Sascha Braun, https://unsplash.com/photos/6Clxp6DDXXo
 - Ảnh dùng theo Unsplash License. Bản hiện tại dùng hai ảnh này thay cho hai ảnh ở mục trước. Lớp phủ bên phải giảm còn 4–15%, phần chữ bên trái 51–72% để giữ độ tương phản.
+
+
+### Ảnh khung vòm mang nét Huế
+
+Khung vòm hiện dùng ảnh chụp tại Huế của Florian Delée: https://unsplash.com/photos/bSErx3YI4Rc (Unsplash License). Ảnh ở `src/assets/vuon-hue.jpg`, gồm cây cảnh, non bộ, cầu cong và kiến trúc mái ngói. Đây là ảnh tạo cảm hứng, không được giới thiệu là công trình của công ty. Nền toàn cảnh hồ sáng giữ nguyên.
