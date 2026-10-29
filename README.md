@@ -87,3 +87,13 @@ Khung vòm hiện dùng ảnh chụp tại Huế của Florian Delée: https://u
 ### Ảnh khung vòm hiện tại: hồ sen Huế
 
 Ảnh hồ sen trước kiến trúc truyền thống tại Huế của Florian Delée: https://unsplash.com/photos/a2e4rXtXDGI, dùng theo Unsplash License. Tệp `src/assets/ho-sen-hue.jpg` thay cho ảnh vườn trước đó; dùng làm ảnh truyền cảm hứng.
+
+## GitHub và triển khai tự động
+
+- Repository: https://github.com/XP0101/san-vuon-co-do-hue
+- GitHub Pages: https://xp0101.github.io/san-vuon-co-do-hue/
+- Bản Sites: https://san-vuon-co-do-hue.palebirch513.chatgpt.site/
+
+Mỗi lần đẩy thay đổi lên nhánh `main`, GitHub Actions sẽ tạo lại `dist/`, chạy kiểm tra rồi triển khai lên GitHub Pages. Có thể chạy lại bằng nút **Run workflow** trong tab Actions. Dùng Python 3.14 khi chạy `build.py`.
+
+GitHub Pages phục vụ website tại đường dẫn dự án; các liên kết tương đối hoạt động trực tiếp. Canonical và sitemap hiện dùng tên miền dự kiến `sanvuoncodo.vn`; cần đổi `DOMAIN` khi chốt tên miền chính thức.
