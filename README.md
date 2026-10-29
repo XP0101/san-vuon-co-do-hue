@@ -63,3 +63,10 @@ Các thay đổi trực tiếp trong `dist/` sẽ bị ghi đè khi tạo lại 
 - Nội dung chính 18px, nút 17px, thông tin phụ thường 16px; khoảng cách dòng 1.8–1.9.
 - Điện thoại dùng một cột cho dịch vụ/dự án; lời giới thiệu được rút gọn và nút đầu trang gọi trực tiếp.
 - Kiểm tra trình duyệt ở 390px và 1440px: không tràn ngang, logo tải đúng, điều hướng không chồng nhau. Khối bài viết chứa đủ nội dung và cách phần liên hệ 64px trên điện thoại.
+
+
+## Ảnh thật ở phần mở đầu
+
+- Ảnh nền lối dạo nhiệt đới: GH Ang, Unsplash, https://unsplash.com/photos/-xk0f3eLStA
+- Ảnh trong khung vòm: Annie Spratt, Unsplash, https://unsplash.com/photos/ezmI-TtoQbc
+- Hai ảnh miễn phí theo Unsplash License, dùng làm ảnh truyền cảm hứng cho giao diện, không phải ảnh công trình của công ty. Bản tải được lưu trong `src/assets/` và nhúng vào trang chủ; không phụ thuộc hotlink.
