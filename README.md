@@ -82,3 +82,8 @@ Các thay đổi trực tiếp trong `dist/` sẽ bị ghi đè khi tạo lại 
 ### Ảnh khung vòm mang nét Huế
 
 Khung vòm hiện dùng ảnh chụp tại Huế của Florian Delée: https://unsplash.com/photos/bSErx3YI4Rc (Unsplash License). Ảnh ở `src/assets/vuon-hue.jpg`, gồm cây cảnh, non bộ, cầu cong và kiến trúc mái ngói. Đây là ảnh tạo cảm hứng, không được giới thiệu là công trình của công ty. Nền toàn cảnh hồ sáng giữ nguyên.
+
+
+### Ảnh khung vòm hiện tại: hồ sen Huế
+
+Ảnh hồ sen trước kiến trúc truyền thống tại Huế của Florian Delée: https://unsplash.com/photos/a2e4rXtXDGI, dùng theo Unsplash License. Tệp `src/assets/ho-sen-hue.jpg` thay cho ảnh vườn trước đó; dùng làm ảnh truyền cảm hứng.

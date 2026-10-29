@@ -60,3 +60,6 @@ body{font-size:18px;line-height:1.8}
 
 /* Giữ kiến trúc Huế và cảnh vườn trong khung vòm. */
 .hero__frame img{object-position:70% center}
+
+/* Căn giữa hồ sen và mái ngói Huế trong khung vòm. */
+.hero__frame img{object-position:50% center}
