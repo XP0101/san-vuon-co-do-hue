@@ -64,5 +64,6 @@ body{font-size:18px;line-height:1.8}
 /* Căn giữa hồ sen và mái ngói Huế trong khung vòm. */
 .hero__frame img{object-position:50% center}
 
-/* Căn dòng cam kết theo cụm nút tư vấn trên điện thoại. */
-@media(max-width:767px){.hero__note{width:fit-content;max-width:100%;margin:20px auto 0;justify-content:center;flex-wrap:nowrap;gap:8px;text-align:center;line-height:1.6}.hero__note svg{flex:0 0 18px}}
+/* Các cam kết nằm chung một dải dưới phần mở đầu. */
+.intro-strip .container{justify-content:center;gap:18px 28px}.intro-strip span{justify-content:center;text-align:center;line-height:1.6}.intro-strip span svg{flex-shrink:0}
+@media(max-width:767px){.intro-strip .container{gap:14px 24px}.intro-strip span{font-size:14px;letter-spacing:.02em}}
