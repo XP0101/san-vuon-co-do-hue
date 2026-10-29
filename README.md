@@ -33,7 +33,7 @@ Các thay đổi trực tiếp trong `dist/` sẽ bị ghi đè khi tạo lại 
 - 3 bài viết, chính sách bảo mật và điều khoản sử dụng.
 - 12 thẻ dự án: 5 hồ sơ và 7 ý tưởng mẫu; lọc danh mục kết hợp tải thêm.
 - Gallery 6 ảnh mỗi hồ sơ, đóng bằng Escape, điều hướng bằng phím mũi tên, hoàn trả focus.
-- Carousel có điều khiển, tạm dừng khi hover/focus và tôn trọng giảm chuyển động.
+- Carousel điều khiển bằng vuốt hoặc chấm điều hướng, không tự chuyển và không có nút pause.
 - Form kiểm tra dữ liệu, yêu cầu đồng ý và soạn email với nội dung đã mã hóa.
 - SEO tiếng Việt, canonical, Open Graph, JSON-LD, sitemap và robots.
 - Menu di động, điều hướng bàn phím, skip link, Zalo và gọi điện.
