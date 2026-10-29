@@ -70,3 +70,10 @@ Các thay đổi trực tiếp trong `dist/` sẽ bị ghi đè khi tạo lại 
 - Ảnh nền lối dạo nhiệt đới: GH Ang, Unsplash, https://unsplash.com/photos/-xk0f3eLStA
 - Ảnh trong khung vòm: Annie Spratt, Unsplash, https://unsplash.com/photos/ezmI-TtoQbc
 - Hai ảnh miễn phí theo Unsplash License, dùng làm ảnh truyền cảm hứng cho giao diện, không phải ảnh công trình của công ty. Bản tải được lưu trong `src/assets/` và nhúng vào trang chủ; không phụ thuộc hotlink.
+
+
+### Thay ảnh bìa sáng hơn
+
+- Nền toàn cảnh hồ và đồi cỏ: Arinal Izzah, https://unsplash.com/photos/00DjNGJqkVk
+- Khung vòm hồ thủy sinh, thác nước và cầu đá: Sascha Braun, https://unsplash.com/photos/6Clxp6DDXXo
+- Ảnh dùng theo Unsplash License. Bản hiện tại dùng hai ảnh này thay cho hai ảnh ở mục trước. Lớp phủ bên phải giảm còn 4–15%, phần chữ bên trái 51–72% để giữ độ tương phản.

@@ -52,3 +52,8 @@ body{font-size:18px;line-height:1.8}
 
 .hero{background:#1c4332}.hero__background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,36,25,.88),rgba(17,43,29,.74) 45%,rgba(16,40,25,.3));z-index:-1;pointer-events:none}
 @media(max-width:767px){.hero{background:#1c4332}.hero:after{background:linear-gradient(180deg,rgba(12,36,25,.88),rgba(17,43,29,.7))}.hero__background{object-position:42% center}}
+
+/* Cảnh vườn thoáng và sáng hơn; chỉ tăng tương phản ở vùng chữ. */
+.hero:after{background:linear-gradient(90deg,rgba(15,43,29,.72) 0%,rgba(20,48,30,.51) 36%,rgba(21,48,31,.15) 67%,rgba(21,48,31,.04) 100%)}
+.hero__background{object-position:center 58%}.hero__stats{background:rgba(15,43,29,.48)}.hero__frame img{object-position:55% center}.hero h1{text-shadow:0 2px 22px #17332135}.hero h1 em{color:#e0edbb}.hero__copy>p,.hero__note{color:#fff;text-shadow:0 1px 8px #15322170}
+@media(max-width:767px){.hero:after{background:linear-gradient(180deg,rgba(15,43,29,.66) 0%,rgba(20,48,30,.56) 48%,rgba(20,48,30,.2) 78%)}.hero__background{object-position:45% center}}
