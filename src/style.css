@@ -76,8 +76,8 @@ body{font-size:18px;line-height:1.8}
 
 /* Giữ thanh điều hướng cố định, không co chiều cao hoặc ẩn/hiện theo từng nhịp cuộn. */
 .header,.header--scrolled{backdrop-filter:none;transform:none}
-.header__inner,.header--scrolled .header__inner{height:100px;transition:none}
+.header__inner,.header--scrolled .header__inner{height:84px;transition:none}
 .header .brand{transform:none;transition:none}
 .header{transition:background-color .25s ease,color .25s ease,box-shadow .25s ease}
-@media(max-width:767px){.header__inner,.header--scrolled .header__inner{height:88px}}
+@media(max-width:767px){.header__inner,.header--scrolled .header__inner{height:76px}}
 @media(prefers-reduced-motion:reduce){.header{transition:none}}
