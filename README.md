@@ -97,3 +97,9 @@ Khung vòm hiện dùng ảnh chụp tại Huế của Florian Delée: https://u
 Mỗi lần đẩy thay đổi lên nhánh `main`, GitHub Actions sẽ tạo lại `dist/`, chạy kiểm tra rồi triển khai lên GitHub Pages. Có thể chạy lại bằng nút **Run workflow** trong tab Actions. Dùng Python 3.14 khi chạy `build.py`.
 
 GitHub Pages phục vụ website tại đường dẫn dự án; các liên kết tương đối hoạt động trực tiếp. Canonical và sitemap hiện dùng tên miền dự kiến `sanvuoncodo.vn`; cần đổi `DOMAIN` khi chốt tên miền chính thức.
+
+### Ảnh cho mục kiến thức làm vườn
+Ảnh lưu tại `src/assets/blog-*.jpg`, dùng cho thẻ bài và ảnh bìa bài viết:
+- Cây cảnh: https://www.pexels.com/photo/person-watering-the-plants-9707252/
+- Hồ Koi: https://www.pexels.com/photo/koi-fish-in-a-pond-in-a-garden-6224438/
+- Sân thượng: https://www.pexels.com/photo/urban-rooftop-garden-with-city-skyline-37168942/
