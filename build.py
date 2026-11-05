@@ -9,7 +9,7 @@ JS=(ROOT/'src/app.js').read_text()
 CSS_MIN=re.sub(r'/\*.*?\*/','',CSS,flags=re.S).replace(chr(10),'')
 DOMAIN='https://sanvuoncodo.vn'
 BRAND='Sân Vườn Cố Đô'
-LOGO='data:image/jpeg;base64,'+base64.b64encode((ROOT/'src/assets/logo.jpeg').read_bytes()).decode()
+LOGO='data:image/png;base64,'+base64.b64encode((ROOT/'src/assets/logo-moi.png').read_bytes()).decode()
 PAGES=[]
 HERO_PHOTO='data:image/jpeg;base64,'+base64.b64encode((ROOT/'src/assets/vuon-ho-xanh.jpg').read_bytes()).decode()
 FRAME_PHOTO='data:image/jpeg;base64,'+base64.b64encode((ROOT/'src/assets/ho-sen-hue.jpg').read_bytes()).decode()
@@ -35,7 +35,7 @@ PATHS={
 def icon(name,cls=''):
     return f'<svg class="{cls}" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">{PATHS.get(name,PATHS["leaf"])}</svg>'
 def brand():
-    return f'<a class="brand" href="index.html" aria-label="Sân Vườn Cố Đô — Trang chủ"><img class="brand__logo" src="{LOGO}" alt="Logo Sân Vườn Cố Đô: cây bonsai, đá và cá Koi" width="64" height="64" decoding="async"><span class="brand__name">Sân Vườn Cố Đô<span class="brand__tag">Kiến tạo không gian xanh</span></span></a>'
+    return f'<a class="brand" href="index.html" aria-label="Sân Vườn Cố Đô — Trang chủ"><img class="brand__logo" src="{LOGO}" alt="Logo Sân Vườn Cố Đô: núi, cây tùng và mặt trời đỏ" width="64" height="64" decoding="async"><span class="brand__name">Sân Vườn Cố Đô<span class="brand__tag">Kiến tạo không gian xanh</span></span></a>'
 def button(label,href,kind='',arrow=True):
     return f'<a class="button {kind}" href="{href}">{label}{icon("arrow") if arrow else ""}</a>'
 # Hình SVG gradient: lối dạo, hồ nước, tán cây và cửa vòm lấy cảm hứng từ vườn Huế.
@@ -100,7 +100,7 @@ def writepage(filename,title,desc,body,active=None,extra=None):
         items.append({'@type':'ListItem','position':len(items)+1,'name':title.split(' – ')[0],'item':url})
     schema=[{'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':items}]
     if extra:schema.append(extra)
-    content=f'''<!doctype html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>{html.escape(title)}</title><meta name="description" content="{html.escape(desc,quote=True)}"><meta name="keywords" content="thiết kế cảnh quan Huế, làm vườn Huế, chăm sóc cây cảnh, hồ cá Koi Huế, tiểu cảnh bonsai, sân vườn Huế"><meta name="theme-color" content="#1B4332"><meta property="og:title" content="{html.escape(title,quote=True)}"><meta property="og:description" content="{html.escape(desc,quote=True)}"><meta property="og:type" content="website"><meta property="og:url" content="{url}"><meta property="og:locale" content="vi_VN"><meta property="og:site_name" content="{BRAND}"><link rel="canonical" href="{url}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B4332'/%3E%3Cpath d='M8 24Q3 7 25 6Q27 27 8 24L21 11' fill='none' stroke='%2374C69D' stroke-width='2'/%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><style>{CSS_MIN}</style><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False)}</script></head><body>{header(active or filename)}<main id="noi-dung">{body}</main>{footer()}<script>{JS}</script></body></html>'''
+    content=f'''<!doctype html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>{html.escape(title)}</title><meta name="description" content="{html.escape(desc,quote=True)}"><meta name="keywords" content="thiết kế cảnh quan Huế, làm vườn Huế, chăm sóc cây cảnh, hồ cá Koi Huế, tiểu cảnh bonsai, sân vườn Huế"><meta name="theme-color" content="#1B4332"><meta property="og:title" content="{html.escape(title,quote=True)}"><meta property="og:description" content="{html.escape(desc,quote=True)}"><meta property="og:type" content="website"><meta property="og:url" content="{url}"><meta property="og:locale" content="vi_VN"><meta property="og:site_name" content="{BRAND}"><link rel="canonical" href="{url}"><link rel="icon" type="image/png" href="{LOGO}"><link rel="apple-touch-icon" href="{LOGO}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><style>{CSS_MIN}</style><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False)}</script></head><body>{header(active or filename)}<main id="noi-dung">{body}</main>{footer()}<script>{JS}</script></body></html>'''
     (OUT/filename).write_text(content)
     PAGES.append(filename)
 def servicecards():

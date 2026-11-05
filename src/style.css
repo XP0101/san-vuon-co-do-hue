@@ -67,3 +67,6 @@ body{font-size:18px;line-height:1.8}
 /* Các cam kết nằm chung một dải dưới phần mở đầu. */
 .intro-strip .container{justify-content:center;gap:18px 28px}.intro-strip span{justify-content:center;text-align:center;line-height:1.6}.intro-strip span svg{flex-shrink:0}
 @media(max-width:767px){.intro-strip .container{gap:14px 24px}.intro-strip span{font-size:14px;letter-spacing:.02em}}
+
+/* Giữ nguyên toàn bộ logo mới, không cắt ảnh thành hình tròn. */
+.brand__logo{border-radius:4px;background:#f8e9e2;object-fit:contain}
