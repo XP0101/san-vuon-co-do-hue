@@ -70,3 +70,9 @@ body{font-size:18px;line-height:1.8}
 
 /* Giữ nguyên toàn bộ logo mới, không cắt ảnh thành hình tròn. */
 .brand__logo{border-radius:4px;background:#f8e9e2;object-fit:contain}
+
+/* Chỉ hiển thị biểu tượng của ảnh logo bên cạnh tên thương hiệu. */
+.brand{gap:14px}
+.brand__mark{position:relative;display:block;width:78px;aspect-ratio:900/480;overflow:hidden;flex-shrink:0;border-radius:3px;background:#f8e9e2}
+.brand .brand__mark .brand__logo{position:absolute;width:143.333%;max-width:none;height:auto;left:-24.444%;top:-48.958%;border-radius:0;object-fit:initial}
+@media(max-width:767px){.brand{gap:11px}.brand__mark{width:64px}.brand__name{font-size:clamp(18px,4.6vw,25px)}.brand__tag{font-size:9px;letter-spacing:.09em}}

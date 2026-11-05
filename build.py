@@ -35,7 +35,7 @@ PATHS={
 def icon(name,cls=''):
     return f'<svg class="{cls}" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">{PATHS.get(name,PATHS["leaf"])}</svg>'
 def brand():
-    return f'<a class="brand" href="index.html" aria-label="Sân Vườn Cố Đô — Trang chủ"><img class="brand__logo" src="{LOGO}" alt="Logo Sân Vườn Cố Đô: núi, cây tùng và mặt trời đỏ" width="64" height="64" decoding="async"><span class="brand__name">Sân Vườn Cố Đô<span class="brand__tag">Kiến tạo không gian xanh</span></span></a>'
+    return f'<a class="brand" href="index.html" aria-label="Sân Vườn Cố Đô — Trang chủ"><span class="brand__mark" aria-hidden="true"><img class="brand__logo" src="{LOGO}" alt="" width="1290" height="1290" decoding="async"></span><span class="brand__name">Sân Vườn Cố Đô<span class="brand__tag">Kiến tạo không gian xanh</span></span></a>'
 def button(label,href,kind='',arrow=True):
     return f'<a class="button {kind}" href="{href}">{label}{icon("arrow") if arrow else ""}</a>'
 # Hình SVG gradient: lối dạo, hồ nước, tán cây và cửa vòm lấy cảm hứng từ vườn Huế.
